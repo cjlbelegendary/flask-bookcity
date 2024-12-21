@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>书城管理系统-书籍入库</title>
+    <link rel="stylesheet" href="../static/assets/stylesheets/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <!-- 左侧栏内容 -->
+            <div class="sidebar">
+                <ul class="sidebar-nav">
+                    <p style="text-indent: 10px"> 当前身份：管理员</p>
+                    <li><a href="/back_to_admin">书籍查询</a></li>
+                    <li><a href="#">书籍入库</a></li>
+                    <li><a href="/">退出登录</a></li>
+                     <!-- 更多链接 -->
+                </ul>
+</div>
+        </div>
+        <div class="topbar">
+            <!-- 顶栏内容 -->
+            <h2 class="top_title" style="line-height: 1.6em; text-align: justify; text-indent: 2em;">书城后台管理系统 Book City back-end management system</h2>
+        </div>
+        <div class="content">
+             <!-- 搜索栏 -->
+            <div class="search-bar">
+            </div>
+            <!-- 数据库查询模块表格 -->
+            <h1>书籍入库</h1>
+            <div class="insert-bar">
+                <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>图片</th>
+                        <th>书名</th>
+                        <th>作者</th>
+                        <th>出版社</th>
+                        <th>价格(元)</th>
+                        <th>数量</th>
+                        <th>位置</th>
+                        <th>简介</th>
+                        <th>操作</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+
+                    <tr>
+                         <form action="/insert" method="post">
+                            <td><input type="hidden" name='id' ></td>
+                            <td><input type="text" name="img" placeholder="图片链接"></td>
+                            <td><input type="text" name="name" placeholder="书名"></td>
+                            <td><input type="text" name="author" placeholder="作者"></td>
+                            <td><input type="text" name="publish" placeholder="出版社"></td>
+                            <td><input type="text" name="price" placeholder="价格"></td>
+                            <td><input type="text" name="amount" placeholder="数量"></td>
+                            <td><input type="text" name="position" placeholder="位置"></td>
+                            <td><input type="text" name="intro" placeholder="简介"></td>
+                            <td class="action-buttons">
+                                <input type="submit" value="入库">
+                            </td>
+                        </form>
+                    </tr>
+                    <!-- 更多行数据 -->
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

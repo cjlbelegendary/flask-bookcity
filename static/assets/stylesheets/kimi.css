@@ -1,0 +1,91 @@
+body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .sidebar {
+            width: 200px; /* 根据需要调整宽度 */
+            background: #333;
+            color: white;
+            height: 100%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            overflow-y: auto;
+        }
+
+        .topbar {
+            height: 50px; /* 根据需要调整高度 */
+            background: #222;
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+
+        .content {
+            flex-grow: 1;
+            margin-left: 200px;
+            padding-top: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
+            overflow-y: auto;
+            background: #f9f9f9;
+        }
+
+        /* 表格样式 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        .action-buttons {
+            text-align: center;
+        }
+
+        .action-button {
+            cursor: pointer;
+            color: #1a73e8;
+            text-decoration: underline;
+        }
+        /* ... 其他样式保持不变 ... */
+
+/* 搜索栏样式 */
+.search-bar {
+    margin-bottom: 20px;
+    text-align: right; /* 使搜索栏在表格上方靠右显示 */
+}
+
+.search-bar input {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    cursor: pointer;
+}

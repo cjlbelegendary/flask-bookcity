@@ -1,0 +1,41 @@
+/* 基本的表格样式 */
+table {
+  width: 100%; /* 表格宽度占满容器 */
+  border-collapse: collapse; /* 相邻边框合并 */
+  margin: 20px 0; /* 表格与上下内容的间距 */
+}
+
+/* 表格头部样式 */
+th {
+  background-color: #f2f2f2; /* 背景颜色 */
+  color: #333; /* 文字颜色 */
+  padding: 10px; /* 内边距 */
+  text-align: left; /* 文本对齐 */
+  border-bottom: 2px solid #ddd; /* 下边框 */
+}
+
+/* 表格单元格样式 */
+td {
+  padding: 10px; /* 内边距 */
+  border-bottom: 1px solid #ddd; /* 底部边框 */
+}
+/* 选择<thead>中的第一行 */
+thead tr:first-child {
+  background-color: #333; /* 深色背景 */
+  color: #fff; /* 文字颜色为白色 */
+}
+
+/* 如果你想要给第一行的每个单元格添加边框，可以这样写 */
+thead tr:first-child th {
+  border: 1px solid #fff; /* 白色边框 */
+}
+
+/* 鼠标悬停效果 */
+tr:hover {
+  background-color: #f5f5f5; /* 鼠标悬停时的背景颜色 */
+}
+
+/* 表格行的条纹样式 */
+tr:nth-child(even) {
+  background-color: #f9f9f9; /* 偶数行的背景颜色 */
+}
